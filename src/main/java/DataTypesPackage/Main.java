@@ -1,5 +1,4 @@
 package DataTypesPackage;
-
 import DataTypesPackage.Enums.FavouriteFruits;
 
 public class Main {
@@ -57,7 +56,6 @@ public class Main {
         //    wordCount(["c", "b", "a"]) → {"a": 1, "b": 1, "c": 1}
         //    wordCount(["c", "c", "c", "c"]) → {"c": 4}
         System.out.println(mapsAndHashMaps.getMyHashMap());
-        System.out.println(mapsAndHashMaps.getMyArrayHashmap());
-
+        System.out.println(mapsAndHashMaps.getMyArrayHashMap());
     }
 }

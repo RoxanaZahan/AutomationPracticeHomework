@@ -11,12 +11,12 @@ public class Strings {
     }
 
     public String concatStrings(String a, String b) {
-        String finalstring = "";
+        String finalString = "";
         if(a.charAt(a.length()-1) == b.charAt(0)) {
-            finalstring = a + b.substring(1);
+            finalString = a + b.substring(1);
         } else {
-            finalstring = a + b;
+            finalString = a + b;
         }
-        return finalstring;
+        return finalString;
     }
 }
