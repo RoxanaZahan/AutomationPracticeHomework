@@ -1,3 +1,5 @@
+package PrimitivesPackage;
+
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -102,7 +104,6 @@ public class Primitives {
     }
 
 
-    Random rand = new Random();
     Scanner scanner = new Scanner(System.in);
 
     public void guessNumber() {
