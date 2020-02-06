@@ -28,6 +28,4 @@ public class FavouriteFruits {
             System.out.println(myFruits.get(i) + ": " + myFruits.get(i+1) + ", " + myFruits.get(i+2));
         }
     }
-
-
 }

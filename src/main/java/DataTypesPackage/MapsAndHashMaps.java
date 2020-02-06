@@ -1,9 +1,5 @@
 package DataTypesPackage;
-
-import com.sun.xml.internal.ws.api.ha.StickyFeature;
-
 import java.util.HashMap;
-import java.util.Map;
 
 public class MapsAndHashMaps {
 
@@ -27,7 +23,7 @@ public class MapsAndHashMaps {
     String[] myArray = {"a", "b", "a", "c", "b"};
     HashMap<String, Integer> myArrayHashMap = new HashMap<>();
 
-    public HashMap getMyArrayHashmap() {
+    public HashMap getMyArrayHashMap() {
         for(String key : myArray) {
             if(myArrayHashMap.containsKey(key)) {
                 myArrayHashMap.put(key, myArrayHashMap.get(key) + 1);
