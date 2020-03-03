@@ -2,7 +2,7 @@ package ObjOrientedProgrammingPackage.AbstractClassesAndInterfaces;
 
 import java.util.ArrayList;
 
-public class Box implements ToBeStored {
+public abstract class Box {
     double maxWeight;
     double weight;
     ArrayList<Book> books;
@@ -13,26 +13,18 @@ public class Box implements ToBeStored {
         this.books = new ArrayList<Book>();
         this.cds = new ArrayList<CD>();
     }
-    @Override
-    public double weight() {
-        return weight;
+
+    public double getWeight() {
+        return this.weight;
     }
 
-    public void add(Book book) {
-        if((this.maxWeight-this.weight) >= book.weight()) {
-            books.add(book);
-            this.weight = this.weight + book.weight();
-        }
+    public double getMaxWeight() {
+        return this.maxWeight;
     }
 
-    public void add(CD cd) {
-        if((this.maxWeight-this.weight) >= cd.weight()) {
-            cds.add(cd);
-            this.weight = this.weight + cd.weight();
-        }
-    }
+    public abstract void add(Book book);
 
-    public String toString() {
-        return "Box: " + (this.books.size() + this.cds.size()) + " things, total weight " + this.weight;
-    }
+    public abstract void add(CD cd);
+
+    public abstract String toString();
 }
